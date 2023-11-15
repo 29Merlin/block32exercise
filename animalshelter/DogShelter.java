@@ -3,7 +3,7 @@ package animalshelter;
 /**
  * Created by Niklas on 2016-02-07.
  */
-public class DogShelter extends AnimalShelter {
+public class DogShelter extends AnimalShelter<Dog> {
 
     @Override
     Dog adoptAnimal(){

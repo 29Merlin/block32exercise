@@ -6,19 +6,19 @@ import java.util.List;
 /**
  * Created by Niklas on 2016-02-07.
  */
-public class AnimalShelter {
+public class AnimalShelter<a>{
     // TODO task 2b: This is the class you primarily need to update, using
     //  parametric polymorphism, to ensure that shelters can be specialised
     //  to specific animals, with complete static type guarantees.
     //  .
     //  Hint: the subclasses CatShelter and DogShelter should become obsolete.
-    private List<Animal> animalsInShelter = new ArrayList<>(20);
+    private List<a> animalsInShelter = new ArrayList<>(20);
 
-    Animal adoptAnimal(){
+    a adoptAnimal(){
         return animalsInShelter.remove(0);
     }
 
-    void putAnimal(Animal animal){
+    void putAnimal(a animal){
         animalsInShelter.add(animal);
     }
 
